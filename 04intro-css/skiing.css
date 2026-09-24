@@ -1,0 +1,148 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/*header stuff here*/
+header {
+    background-color: #ccdbec;
+    padding: 1rem 20px;
+}
+
+header span {
+    font-weight: 600;
+    /* Regular */
+    font-size: 2rem;
+    color: #02408d;
+}
+
+/*navigation stuff here*/
+nav {
+    background-color: #02408d;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#ebf4ff;
+}
+
+nav li.active a {
+    background-color: #2261aa;
+}
+
+nav li a:hover {
+    color: #d5e4fb;
+}
+
+/* main stuff here*/
+
+main {
+    padding: 1rem 20px;
+    background-color: #ebf4ff;
+}
+
+main h1 {
+    font-weight: 700;
+    /* Bold */
+    font-size: 2.5rem;
+    color: #02408d;
+    margin-bottom: -20px;
+}
+
+main h2 {
+    font-weight: 600;
+    /* Semi-bold */
+    font-size: 2rem;
+    color: #2261aa;
+}
+
+main p {
+    font-weight: 400;
+    /* Regular */
+    font-size: 1.1rem;
+    color: #002147;
+}
+
+.italic-text {
+    font-style: italic;
+    /* Italic */
+}
+
+main ol {
+    padding: 1rem;
+    background-color: #f5f9ff;
+}
+
+main dl dt {
+    color: #02408d;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+main dl dd {
+    margin: 0 0 1rem 0;
+}
+
+main ul {
+    padding: 1rem;
+    background-color: #f5f9ff;
+    list-style-type: square;
+}
+
+main ul li {
+   margin: .8rem;
+   line-height: 115%;
+}
+
+main strong {
+    color: #2261aa;
+}
+
+main em {
+    color:#002147;
+}
+
+main address {
+    background-color: #f5f9ff;
+    padding: 1rem;
+    font-style: italic;
+    border: 5px solid #02408d;
+    border-radius: 4px;
+    width: fit-content;
+    color: #02408d;
+}
+
+main a {
+    color:#2261aa;
+}
+
+main a:hover {
+    color: #02408d;
+}
+
+/* footer stuff here*/
+footer {
+    background-color: #02408d;
+}
+
+footer p {
+    margin: 0;
+    color: #d5e4fb;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
