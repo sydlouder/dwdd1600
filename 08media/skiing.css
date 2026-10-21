@@ -1,0 +1,338 @@
+/*prevent problems on different browsers*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*header stuff here*/
+header {
+    background-color: #ccdbec;
+    padding: 1rem 20px;
+    display: flex;
+    align-items:center;
+}
+
+header span {
+    font-weight: 600;
+    /* Regular */
+    font-size: 2rem;
+    color: #02408d;
+}
+
+header img{
+    width: 50px;
+    height:auto;
+}
+
+/*navigation stuff here*/
+
+/*small screen navigation*/
+@media only screen and (max-width: 768px) {
+    
+nav {
+    background-color: #02408d;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#ebf4ff;
+    text-align: center;
+}
+
+nav li.active a {
+    background-color: #2261aa;
+    color: #ebf4ff;
+    background-image: linear-gradient(to bottom, #4083d6, #2261aa);
+}
+
+
+}/*end of small screen navigation*/
+
+/*large screen navigation*/
+@media only screen and (min-width: 769px) {
+    
+nav {
+    background-color: #02408d;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#ebf4ff;
+}
+
+nav li.active a {
+    background-color: #2261aa;
+}
+
+nav li a:hover {
+    color: #d5e4fb;
+}
+
+}/*end of large screen navigation*/
+
+
+
+/* main stuff here*/
+
+main {
+    padding: 1rem 20px;
+    background-color: #ebf4ff;
+    flex: 1;
+}
+
+main h1 {
+    font-weight: 700;
+    /* Bold */
+    font-size: 2.5rem;
+    color: #02408d;
+    margin-bottom: 1.3rem;
+}
+
+main h2 {
+    font-weight: 600;
+    /* Semi-bold */
+    font-size: 2rem;
+    color: #2261aa;
+}
+
+main h3 {
+    font-weight: 600;
+    /* Semi-bold */
+    font-size: 1.5rem;
+    color: #2261aa;
+}
+
+main p {
+    font-weight: 400;
+    /* Regular */
+    font-size: 1.1rem;
+    color: #002147;
+}
+
+.italic-text {
+    font-style: italic;
+    /* Italic */
+}
+
+main ol {
+    padding: 1rem;
+    background-color: #f5f9ff;
+}
+
+main dl dt {
+    color: #02408d;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+main dl dd {
+    margin: 0 0 1rem 0;
+}
+
+main ul {
+    padding: 1rem;
+    background-color: #f5f9ff;
+    list-style-type: square;
+}
+
+main ul li {
+   margin: .8rem;
+   line-height: 115%;
+}
+
+main strong {
+    color: #2261aa;
+}
+
+main em {
+    color:#002147;
+}
+
+main address {
+    background-color: #f5f9ff;
+    padding: 1rem;
+    font-style: italic;
+    border: 5px solid #02408d;
+    border-radius: 4px;
+    width: fit-content;
+    color: #02408d;
+}
+
+main a {
+    color:#2261aa;
+}
+
+main a:hover {
+    color: #02408d;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+}
+
+/*table stuff here*/
+table.ski-prices {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.ski-prices th {
+    background-color: #2261aa;
+    color:#ebf4ff;
+    padding: 1rem 5%;
+    text-align: left;
+}
+
+table.ski-prices td{
+    color:#02408d;
+    padding: .6rem 5%;
+}
+
+table.ski-prices tr:nth-child(odd){
+    background-color:#ccdbec;
+}
+
+table.ski-prices tr:hover{
+    background-color:#bbcbdb;
+}
+
+/* footer stuff here*/
+footer {
+    background-color: #02408d;
+    clear:both;
+}
+
+footer p {
+    margin: 0;
+    color: #d5e4fb;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* main image stuff here*/
+
+figure.main-figure {
+    float: right;
+    margin: 1rem;
+    width: 25%;
+}
+
+figure.main-figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure.main-figure figcaption {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #02408d;
+    margin: 0 1rem 0 0;
+}
+
+/* gallery stuff here */
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: right;
+    font-size: 1.1rem;
+    color: #02408d;
+}
+
+div.gallery img:hover {
+    box-shadow: 0 0 12px #2261aa;
+}
+
+/* form stuff here */
+.form fieldset {
+    border: 2px solid #2261aa;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.form legend {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #2261aa;
+}
+
+.form label, .form select, .form input[type="text"], .form input[type="email"], .form input[type="tel"], .form textarea {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="tel"], .form textarea, .form select {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #2261aa;
+    border-radius: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    /* Regular */
+    font-size: 1rem;
+    color:#002147;
+}
+
+.form textarea {
+    height: 8rem;
+}
+
+.form [type="submit"] {
+    background-color: #2261aa;
+    color: #d5e4fb;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1.3rem;
+}
+
+header,nav,main,footer {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sydney Louder">
+    <meta name="description" content="Skiing in Utah">
+    <meta name="viewport" content="width=
+   , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="skiing.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Ski the Powder UT</title>
+</head>
+
+
+<body>
+    <!--start the page head-->
+    <header>
+        <img src="images/logo.png" alt="Ski Logo" width="50" height="50">
+        <span>Ski the Powder UT</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Ski the Powder UT</a></li>
+            <li><a href="resorts.html">Resorts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="find.html">Find Your Resort</a></li>
+            <li><a href="plan.html">Plan Your Trip</a></li>
+            <li><a href="map.html">Ski Map</a></li>
+        </ul>
+    </nav>
+
+
+    <!--start the main content-->
+    <main>
+        <h1>
+            Find Your Resort
+        </h1>
+
+        <form method="get" class="form" action="thanks.html">
+
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>Full Name*:
+                    <input type="text" name="name" required>
+                </label>
+                <label>Email*:
+                    <input type="email" name="email" required placeholder="you@example.com">
+                </label>
+                <label>Phone Number*:
+                    <input type="tel" name="phone" required placeholder="123-456-7890">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What is your skiing experience?</legend>
+                <label>
+                    <input type="radio" name="experience" value="beginner" required>
+                    Beginner
+                </label>
+                <label>
+                    <input type="radio" name="experience" value="intermediate">
+                    Intermediate
+                </label>
+                <label>
+                    <input type="radio" name="experience" value="advanced">
+                    Advanced
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What kind of terrain do you enjoy?</legend>
+                <label>
+                    <input type="checkbox" name="terrain" value="groomed">
+                    Groomed and smooth runs
+                </label>
+                <label>
+                    <input type="checkbox" name="terrain" value="powder">
+                    Fresh powder and deep snow
+                </label>
+                <label>
+                    <input type="checkbox" name="terrain" value="steep">
+                    Steep and challenging terrain
+                </label>
+                <label>
+                    <input type="checkbox" name="terrain" value="tree">
+                    Tree skiing and off-trail adventures
+                </label>
+                <label>
+                    <input type="checkbox" name="terrain" value="park">
+                    Terrain parks and freestyle features
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Who will you be skiing with?</legend>
+                <label>
+                    <input type="checkbox" name="companions" value="solo">
+                    Solo
+                </label>
+                <label>
+                    <input type="checkbox" name="companions" value="friends">
+                    Friends
+                </label>
+                <label>
+                    <input type="checkbox" name="companions" value="family">
+                    Family
+                </label>
+                <label>
+                    <input type="checkbox" name="companions" value="children">
+                    Young children
+                </label>
+                <label>
+                    <input type="checkbox" name="companions" value="group">
+                    Large group or club
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Where would you prefer to ski?</legend>
+                <label>
+                    <input type="checkbox" name="location" value="saltlake">
+                    Near Salt Lake City
+                </label>
+                <label>
+                    <input type="checkbox" name="location" value="parkcity">
+                    Near Park City
+                </label>
+                <label>
+                    <input type="checkbox" name="location" value="north">
+                    Northern Utah
+                </label>
+                <label>
+                    <input type="checkbox" name="location" value="south">
+                    Southern Utah
+                </label>
+                <label>
+                    <input type="checkbox" name="location" value="anywhere">
+                    Anywhere in Utah
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What is your budget for a ski trip?</legend>
+                <select name="budget">
+                    <option value="none">Select your budget</option>
+                    <option value="low">Low ($100-$300)</option>
+                    <option value="medium">Medium ($300-$600)</option>
+                    <option value="high">High ($600+)</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>What matters most to you while skiing?</legend>
+                <label>
+                    <textarea name="preferences" placeholder="Share your preferences..."></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Find My Resort">
+
+        </form>
+
+
+    </main>
+
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Sydney Louder &bull; Web Essentials</p>
+    </footer>
+
+
+</body>
+
+
+</html>
